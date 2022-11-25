@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  box-sizing: border-box;
+  padding: 60px 66px 0px;
+  align-items: center;
+  gap: 20px;
+
+  @media screen and (max-width:500px) {
+    padding: 24px 20px 0px;
+  }
+
+  &__logo {
+    font-size: 22px;
+    line-height: 30px;
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &__info {
+    font-size: 12px;
+    line-height: 12px;
+    background-color: $color-green;
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+}
