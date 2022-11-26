@@ -1,0 +1,57 @@
+.warranty {
+  width: 100%;
+  max-width: 1240px;
+  box-sizing: border-box;
+  padding: 70px 20px 0px;
+
+  @media screen and (max-width:500px) {
+    padding: 70px 20px 0px;
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 40px;
+    color: $color-white;
+    margin: 0px 0px 60px 0px;
+
+    @include desktop {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media screen and (max-width:500px) {
+      font-size: 12px;
+      line-height: 18px;
+      margin: 0px 0px 40px 0px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width:500px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+
+  &__card {
+    box-sizing: border-box;
+    flex-basis: 25%;
+    border-radius: 10px;
+    padding: 20px;
+
+    @media screen and (max-width:500px) {
+      padding: 20px 20px 38px;
+    }
+  }
+}
