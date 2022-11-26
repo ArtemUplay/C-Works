@@ -1,0 +1,46 @@
+.about-repair {
+  width: 100%;
+  max-width: 1240px;
+  box-sizing: border-box;
+  padding: 120px 60px 0px;
+
+  @media screen and (max-width:660px) {
+    padding: 60px 20px 0px;
+  }
+
+  &__text {
+    font-size: 32px;
+    line-height: 40px;
+    color: $color-gray;
+    margin: 0px 0px 60px 0px;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media screen and (max-width:660px) {
+      font-size: 12px;
+      line-height: 18px;
+      margin: 0px 0px 20px 0px;
+    }
+
+  }
+
+  &__subtext {
+    font-size: 32px;
+    line-height: 40px;
+    color: $color-white;
+    margin: 0;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media screen and (max-width:660px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}

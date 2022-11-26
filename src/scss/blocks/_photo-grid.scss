@@ -1,0 +1,36 @@
+.photo-grid {
+  box-sizing: border-box;
+  padding: 120px 30px 0px;
+  width: 100%;
+  max-width: 1440px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: fit-content(448px) minmax(auto, 912px);
+  // justify-content: center;
+
+  &__item {
+    border-radius: 10px;
+  }
+
+  &__item_photo_camera-name {
+    width: 100%;
+    max-width: 448px;
+  }
+
+  &__item_background_yellow {
+    width: 100%;
+    max-width: 912px;
+    background-color: #FFD233;
+  }
+
+  &__item_background_green {
+    width: 100%;
+    width: 630px;
+    background-color: $color-green;
+  }
+
+  &__item_photo_camera {
+    width: 100%;
+    max-width: 730px;
+  }
+}
