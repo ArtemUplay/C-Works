@@ -1,0 +1,61 @@
+.card {
+  display: block;
+  text-decoration: none;
+  background-color: $color-gray-2;
+  border-radius: 16px;
+  padding: 40px;
+  align-self: stretch;
+
+  @media screen and (max-width:500px) {
+    padding: 20px;
+  }
+
+  &__service-name {
+    color: $color-gray;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0px 0px 20px 0px;
+
+    @media screen and (max-width:500px) {
+      margin: 0px 0px 10px 0px;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 32px;
+    color: $color-white;
+    margin: 0px 0px 40px 0px;
+
+    @media screen and (max-width:500px) {
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0px 0px 28px 0px;
+    }
+  }
+
+  &__text {
+    font-size: 32px;
+    line-height: 40px;
+    color: $color-gray;
+
+    @media screen and (max-width:500px) {
+      font-size: 12px;
+      line-height: 18px;
+      margin: 0px 0px 100px 0px;
+    }
+  }
+
+  &__price {
+    font-size: 14px;
+    line-height: 14px;
+    color: $color-green;
+    margin: 0;
+
+    @media screen and (max-width:500px) {
+      font-size: 12px;
+      line-height: 18px;
+
+    }
+  }
+}

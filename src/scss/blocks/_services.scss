@@ -1,0 +1,17 @@
+.services {
+  padding: 120px 60px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  @include desktop {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width:500px) {
+    padding: 70px 20px 0px;
+  }
+
+  &__card {}
+}
