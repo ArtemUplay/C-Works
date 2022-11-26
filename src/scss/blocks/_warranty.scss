@@ -2,13 +2,14 @@
   width: 100%;
   max-width: 1240px;
   box-sizing: border-box;
-  padding: 70px 20px 0px;
+  padding: 70px 60px 0px;
 
   @media screen and (max-width:500px) {
     padding: 70px 20px 0px;
   }
 
   &__title {
+    font-weight: 400;
     font-size: 32px;
     line-height: 40px;
     color: $color-white;
