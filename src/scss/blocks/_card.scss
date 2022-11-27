@@ -5,6 +5,11 @@
   border-radius: 16px;
   padding: 40px;
   align-self: stretch;
+  transition: $transition-value;
+
+  &:hover {
+    background-color: #232327;
+  }
 
   @include mobile {
     padding: 20px;
