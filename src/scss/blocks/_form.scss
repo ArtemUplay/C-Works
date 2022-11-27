@@ -33,6 +33,7 @@
 
   .form__button {
     display: flex;
+    justify-content: center;
     align-items: center;
     background: #47474C;
     border-radius: 0px 8px 8px 0px;
@@ -46,13 +47,6 @@
     line-height: 24px;
     letter-spacing: 0.375px;
     color: $color-white;
-    background-image: url(../../../images/emoji-two-fingers.svg);
-    background-repeat: no-repeat;
-    background-position: 194px 16px;
-
-    &_show_new-text {
-      background-image: none;
-    }
 
     @media screen and (max-width:660px) {
       display: none;
@@ -63,6 +57,8 @@
 
       @media screen and (max-width:660px) {
         display: block;
+        font-size: 10px;
+        line-height: 10px;
         width: 51px;
         background-repeat: no-repeat;
         padding: 20px;

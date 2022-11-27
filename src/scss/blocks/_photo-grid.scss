@@ -1,36 +1,72 @@
 .photo-grid {
-  box-sizing: border-box;
-  padding: 120px 30px 0px;
   width: 100%;
+  box-sizing: border-box;
   max-width: 1440px;
-  gap: 20px;
+  padding: 120px 30px 0px;
   display: grid;
-  grid-template-columns: fit-content(448px) minmax(auto, 912px);
-  // justify-content: center;
+
+  @include desktop {
+    padding: 52px 60px 0px;
+  }
+
+  @include tablet {
+    padding: 40px 20px 0px;
+  }
+
+  &__first-row {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 448px 1fr;
+    margin: 0px 0px 20px 0px;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 67px;
+    }
+  }
+
+  &__second-row {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 730px;
+
+    @include desktop {
+      grid-template-columns: 1fr 455px;
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      grid-template-rows: 124px 1fr;
+    }
+  }
 
   &__item {
     border-radius: 10px;
-  }
 
-  &__item_photo_camera-name {
-    width: 100%;
-    max-width: 448px;
-  }
+    &_photo_camera-name {
+      width: 100%;
+      max-width: 448px;
+      height: auto;
 
-  &__item_background_yellow {
-    width: 100%;
-    max-width: 912px;
-    background-color: #FFD233;
-  }
+      @include tablet {
+        max-width: 100%;
+      }
+    }
 
-  &__item_background_green {
-    width: 100%;
-    width: 630px;
-    background-color: $color-green;
-  }
+    &_background_yellow {
+      background-color: #FFD233;
+    }
 
-  &__item_photo_camera {
-    width: 100%;
-    max-width: 730px;
+    &_background_green {
+      background-color: #25E197;
+    }
+
+    &_photo_camera {
+      width: 100%;
+      max-width: 730px;
+      height: auto;
+    }
   }
 }
