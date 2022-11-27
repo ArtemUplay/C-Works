@@ -6,7 +6,7 @@
   padding: 40px;
   align-self: stretch;
 
-  @media screen and (max-width:500px) {
+  @include mobile {
     padding: 20px;
   }
 
@@ -17,7 +17,7 @@
     line-height: 18px;
     margin: 0px 0px 20px 0px;
 
-    @media screen and (max-width:500px) {
+    @include mobile {
       margin: 0px 0px 10px 0px;
     }
 
@@ -25,7 +25,7 @@
       color: #EAEAF0;
       margin: 0px 0px 38px 0px;
 
-      @media screen and (max-width:500px) {
+      @include mobile {
         margin: 0px 0px 36px 0px;
       }
     }
@@ -38,7 +38,7 @@
     color: $color-white;
     margin: 0px 0px 40px 0px;
 
-    @media screen and (max-width:500px) {
+    @include mobile {
       font-size: 24px;
       line-height: 32px;
       margin: 0px 0px 28px 0px;
@@ -50,7 +50,7 @@
     line-height: 40px;
     color: $color-gray;
 
-    @media screen and (max-width:500px) {
+    @include mobile {
       font-size: 12px;
       line-height: 18px;
       margin: 0px 0px 100px 0px;
@@ -62,7 +62,7 @@
       color: $color-gray;
       margin: 0;
 
-      @media screen and (max-width:500px) {
+      @include mobile {
         margin: 0;
         font-size: 12px;
         line-height: 18px;
@@ -77,7 +77,7 @@
     color: $color-green;
     margin: 0;
 
-    @media screen and (max-width:500px) {
+    @include mobile {
       font-size: 12px;
       line-height: 18px;
     }

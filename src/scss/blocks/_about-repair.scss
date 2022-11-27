@@ -4,7 +4,7 @@
   box-sizing: border-box;
   padding: 120px 60px 0px;
 
-  @media screen and (max-width:500px) {
+  @include mobile {
     padding: 60px 20px 0px;
   }
 
@@ -19,7 +19,7 @@
       line-height: 30px;
     }
 
-    @media screen and (max-width:500px) {
+    @include mobile {
       font-size: 12px;
       line-height: 18px;
       margin: 0px 0px 20px 0px;
@@ -39,7 +39,7 @@
       line-height: 30px;
     }
 
-    @media screen and (max-width:500px) {
+    @include mobile {
       font-size: 12px;
       line-height: 18px;
     }

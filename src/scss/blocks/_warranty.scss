@@ -4,7 +4,7 @@
   box-sizing: border-box;
   padding: 70px 60px 0px;
 
-  @media screen and (max-width:500px) {
+  @include mobile {
     padding: 70px 20px 0px;
   }
 
@@ -20,7 +20,7 @@
       line-height: 30px;
     }
 
-    @media screen and (max-width:500px) {
+    @include mobile {
       font-size: 12px;
       line-height: 18px;
       margin: 0px 0px 40px 0px;
@@ -39,7 +39,7 @@
       grid-template-rows: repeat(2, 1fr);
     }
 
-    @media screen and (max-width:500px) {
+    @include mobile {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
     }
@@ -51,7 +51,7 @@
     border-radius: 10px;
     padding: 20px;
 
-    @media screen and (max-width:500px) {
+    @include mobile {
       padding: 20px 20px 38px;
     }
   }

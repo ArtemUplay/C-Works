@@ -26,7 +26,7 @@
       background-color: rgba(142, 142, 152, 0.3);
     }
 
-    @media screen and (max-width:500px) {
+    @include mobile {
       width: 229px;
     }
   }

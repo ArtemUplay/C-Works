@@ -4,7 +4,7 @@
   box-sizing: border-box;
   padding: 60px 0px 0px 60px;
 
-  @media screen and (max-width: 500px) {
+  @include mobile {
     padding: 60px 20px 0px 20px;
   }
 
