@@ -545,7 +545,7 @@ template {
   letter-spacing: 0.375px;
   color: #fff;
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 500px) {
   .form .form__button {
     display: none;
   }
@@ -553,7 +553,7 @@ template {
 .form .form__button_version_mobile {
   display: none;
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 500px) {
   .form .form__button_version_mobile {
     display: block;
     font-size: 10px;
