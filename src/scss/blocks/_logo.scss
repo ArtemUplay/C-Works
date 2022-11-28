@@ -3,4 +3,9 @@
   line-height: 30px;
   color: $color-white;
   text-decoration: none;
+
+  @include mobile {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }

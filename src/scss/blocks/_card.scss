@@ -1,5 +1,6 @@
 .card {
   display: block;
+  box-sizing: border-box;
   text-decoration: none;
   background-color: #1C1C1E;
   border-radius: 16px;
@@ -26,7 +27,7 @@
       margin: 0px 0px 10px 0px;
     }
 
-    &_warranty_item {
+    &_warranty-item {
       color: #EAEAF0;
       margin: 0px 0px 38px 0px;
 
@@ -54,6 +55,8 @@
     font-size: 32px;
     line-height: 40px;
     color: $color-gray;
+    margin: 0;
+    margin-bottom: 40px;
 
     @include mobile {
       font-size: 12px;
@@ -61,14 +64,13 @@
       margin: 0px 0px 100px 0px;
     }
 
-    &_warranty_item {
+    &_warranty-item {
       font-size: 15px;
       line-height: 19px;
       color: $color-gray;
       margin: 0;
 
       @include mobile {
-        margin: 0;
         font-size: 12px;
         line-height: 18px;
       }
