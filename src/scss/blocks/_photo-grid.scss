@@ -14,7 +14,7 @@
   }
 
   @media screen and (max-width:670px) {
-    padding: 40px 20px 0px;
+    padding: 37px 20px 0px;
   }
 
   &__first-row {
@@ -56,6 +56,10 @@
 
       @media screen and (max-width:670px) {
         max-width: 100%;
+      }
+
+      @include mobile {
+        border-radius: 4px;
       }
     }
 
