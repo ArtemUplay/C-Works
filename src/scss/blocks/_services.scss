@@ -16,5 +16,12 @@
     padding: 70px 20px 0px;
   }
 
-  &__card {}
+  &__card {
+    width: 100%;
+    max-width: 550px;
+
+    @include tablet {
+      max-width: 648px;
+    }
+  }
 }

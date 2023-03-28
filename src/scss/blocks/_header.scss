@@ -7,6 +7,10 @@
   align-items: center;
   gap: 20px;
 
+  @include tablet {
+    gap: 15px;
+  }
+
   @include mobile {
     padding: 24px 20px 0px;
   }

@@ -1,13 +1,26 @@
 .form {
+  width: 100%;
+  max-width: 569px;
   font-size: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 221px;
+
+  @include tablet {
+    max-width: 648px;
+  }
+
+  @include mobile {
+    max-width: 100%;
+    grid-template-columns: 1fr 51px;
+  }
 
   .form__field {
+    display: block;
     background-color: rgba(142, 142, 152, 0.2);
     border-radius: 8px 0px 0px 8px;
     border: 0;
-    width: 348px;
+    width: 100%;
+    max-width: 348px;
     height: 50px;
     padding: 0;
     font-size: 14px;
@@ -26,8 +39,12 @@
       background-color: rgba(142, 142, 152, 0.3);
     }
 
+    @include tablet {
+      max-width: 427px;
+    }
+
     @include mobile {
-      width: 229px;
+      width: 100%;
     }
   }
 
@@ -48,14 +65,14 @@
     letter-spacing: 0.375px;
     color: $color-white;
 
-    @media screen and (max-width:660px) {
+    @include mobile {
       display: none;
     }
 
-    &_mobile_version {
+    &_version_mobile {
       display: none;
 
-      @media screen and (max-width:660px) {
+      @include mobile {
         display: block;
         font-size: 10px;
         line-height: 10px;
@@ -69,12 +86,12 @@
     font-size: 12px;
     line-height: 18px;
     color: #47474C;
-    margin: 12px 0px 0px 0px;
-    padding: 0px 0px 0px 10px;
-    flex-basis: 100%;
+    margin: 0;
+    margin-top: 12px;
+    padding-left: 10px;
 
-    @media screen and (max-width: 900px) {
-      padding: 0;
+    @include mobile {
+      padding-left: 0;
     }
   }
 }
